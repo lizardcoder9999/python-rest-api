@@ -3,9 +3,11 @@ from flask_restful import Api
 from resources.user import UserLogin,UserRegister
 from resources.post import AddPost,DeletePost
 from resources.admin import AdminUpdate,AddAdmin,AdminLogin,DeleteAdmin
+import os
+import dotenv
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'ldO0INUsJErtmZ4pqny7pTDqeywGpxfN'
+app.config['SECRET_KEY'] = str(os.getenv('SECRET_KEY'))
 app.config['TESTING'] = True
 api = Api(app)
 
