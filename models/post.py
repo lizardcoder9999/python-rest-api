@@ -1,7 +1,9 @@
 import pymongo
+import os
+import dotenv
 
 #MONGO_SETUP##################################################################################################
-client = pymongo.MongoClient('mongodb+srv://:!@cluster0.ffqsi.mongodb.net/curdapi?retryWrites=true&w=majority')
+client = pymongo.MongoClient(str(os.getenv('MONGODB_URI')))
 db = client['curdapi']
 post_col = db['posts']
 admin_col = db['admin']

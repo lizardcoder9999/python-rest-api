@@ -1,9 +1,11 @@
 import pymongo
 import bcrypt
+import os
+import dotenv
 
 
 #Mongo DB
-client = pymongo.MongoClient('mongodb+srv://:@cluster0.ffqsi.mongodb.net/curdapi?retryWrites=true&w=majority')
+client = pymongo.MongoClient(str(os.getenv('MONGODB_URI')))
 db = client['curdapi']
 admin_col = db['admin']
 
