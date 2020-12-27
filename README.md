@@ -5,7 +5,7 @@ rest api for handeling crud in blogs or cms systems.
 
 
 ## Setup
-To run this project, you would have to clone this repo onto your server or host and install the requirements.txt.
+To run this project, you would have to clone this repository onto your server or host and install the requirements.txt.
 
  ```
  $ pip3 install -r requirements.txt
