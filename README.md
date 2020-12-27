@@ -23,6 +23,6 @@ To run this project, you would have to clone this repository onto your server or
  
  The admin parameter is the admins username who is making the request and the api key is the api key which corresponds with the admins username. All the user passwords will be hashed aswell.
  
- There are many more routes and I will be updating this readme.md more soon
+ There are many more routes and I will be updating this readme.md more soon.
  ```
  
